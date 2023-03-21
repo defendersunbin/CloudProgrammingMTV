@@ -13,8 +13,8 @@ def index(request):
         }
     )
 
-def single_post_page(request, post_num):
-    post = Post.objects.get(pk=post_num)
+def single_post_page(request, pk):
+    post = Post.objects.get(pk=pk)
 
     return render(
         request,
