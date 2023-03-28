@@ -82,7 +82,7 @@
         <p>{{ post.content }}</p>
 
         {% if post.file_upload %}
-          <a href="{{ post.file_upload.url }}" class="btn btn-outline-primary">Download</a>
+          <a href= {{ post.file_upload.url }} type="button" class="btn btn-outline-primary">Download</a>
             {{ post.file_upload.name }}
         {% endif %}
 
